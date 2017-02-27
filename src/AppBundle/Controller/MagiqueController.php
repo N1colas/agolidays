@@ -25,7 +25,7 @@ class MagiqueController
     public function apiNumeroAction($count)
     {
         $data = array(
-            'count' => $count,
+            'count' => $count, 
             'numero_magique' => rand(0, 100),
         );
 
