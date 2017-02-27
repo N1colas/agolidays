@@ -20,11 +20,12 @@ class MagiqueController
     }
     
    /**
-     * @Route("/api/numero/magique")
+     * @Route("/api/numero/magique/{count}")
      */
-    public function apiNumeroAction()
+    public function apiNumeroAction($count)
     {
         $data = array(
+            'count' => $count,
             'numero_magique' => rand(0, 100),
         );
 
